@@ -18,6 +18,8 @@ public class BookController {
   //post ~/books
   @PostMapping("")
   public void insertBook(@RequestBody BookDTO bookDTO){
+    //첨부파일(도서 이미지) 업로드
+    //BOOK 테이블에 데이터 INSERT
     bookService.insertBook(bookDTO);
   }
 }
